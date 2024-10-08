@@ -10,7 +10,14 @@
 @import url(../blocks/lead/lead.css);
 @import url(../blocks/lead/__image/lead__image.css);
 @import url(../blocks/lead/__ideas/lead__ideas.css);
+@import url(../blocks/lead/__peterburg/lead__peterburg.css);
 
 @import url(../blocks/footer/footer.css);
 @import url(../blocks/footer/__button/footer__button.css);
 @import url(../blocks/footer/__author/footer__author.css);
+
+@import url(../blocks/popup/popup.css);
+@import url(../blocks/popup/__content/popup__content.css);
+@import url(../blocks/popup/__close-btn/popup__close-btn.css);
+@import url(../blocks/popup/__header/popup__header.css);
+@import url(../blocks/popup/__text/popup__text.css);

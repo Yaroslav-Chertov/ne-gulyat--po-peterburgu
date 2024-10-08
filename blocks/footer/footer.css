@@ -1,5 +1,4 @@
 .footer {
-    max-width: 1184px;
     margin: 0 auto;
     padding-bottom: 20px;
     display: flex;
@@ -8,7 +7,6 @@
     position: absolute;
     bottom: 0;
     width: 100%;
-    /* Высота footer */
     height: 30px;
 }
 
