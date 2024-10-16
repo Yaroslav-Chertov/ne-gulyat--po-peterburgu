@@ -1,3 +1,4 @@
+// Функционал смены картинки и текста
 let phrases = [
     { text: 'наслаждаться Выборгом', image: './images/viborg.jpg' },
     { text: 'любоваться кирхой в Приморске', image: './images/primorsk.jpg' },
@@ -45,3 +46,23 @@ for (let i = 0; i <= 2; i = i + 1) {
     smoothly(phrase, 'textContent', phrases[i].text);
     smoothly(image, 'src', phrases[i].image);
 }
+
+// Попап о проекте
+const aboutButton = document.querySelector('.footer__button');
+const aboutPopup = document.querySelector('.popup_about');
+const aboutCloseButton = aboutPopup.querySelector('.popup__close-btn');
+
+aboutButton.addEventListener('click', (e) => {
+    e.preventDefault();
+    aboutPopup.classList.add('popup_opened');
+});
+
+aboutCloseButton.addEventListener('click', () => {
+    aboutPopup.classList.remove('popup_opened');
+});
+
+aboutPopup.addEventListener('click', (e) => {
+    if (e.target === e.currentTarget) {
+        aboutPopup.classList.remove('popup_opened');
+    };
+});
